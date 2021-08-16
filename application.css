@@ -1,0 +1,259 @@
+:root {
+    --main-color: #6A7B8B;
+    --second-color: #BAC2C8;
+    --text-color: #5C5B5B;
+    --second-text-color: #FFFFFF;
+    --background-color: #F5F5F5;
+    --font: 'Open sans', sans-serif;
+} 
+
+/*Worked on this project with wrong scalling in the browser,
+found out only when it was almost done. Will add changes later*/
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header - nav bar*/
+.nav-bar {
+    height: 5rem;
+    background-color: #6A7B8B;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-nav-bar-header {
+    height: 5rem;
+    width: auto;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.nav-bar ul {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--second-text-color);
+    list-style: none;
+    padding-right: 3rem;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 2rem;
+    
+}
+.main-logo {
+    height: 10rem ;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+}
+/* code above is similar on all pages*/
+
+main {
+    padding: 8%;
+    background-color: var(--background-color);
+}
+
+.main-photo{
+    position: relative;
+}
+
+.main-photo img {
+    width: 100%;
+} 
+
+.main-photo h1 {
+    position: absolute;
+    top: 10%;
+    text-transform: uppercase;
+    font-size: 4.5vh;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: var(--second-text-color);
+    text-shadow: 2px 2px 4px #000000
+
+}
+
+.allcards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.cards {
+    color: var(--second-text-color);
+    background-color: var(--second-color);
+    position: relative;
+    text-align: center;
+    width: 30%;
+    box-shadow: 10px 10px 5px grey;
+}
+h2 {
+    color: var(--text-color);
+    font-size: 4vh;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    padding: 5rem;
+}
+
+.logo-img {
+    height: 7rem;
+    padding: 15% 5% 3% 5%;
+    
+}
+
+h3 {
+    font-size: 3vh;
+    padding: 5%;
+    text-shadow: 2px 2px 4px #5C5B5B;
+}
+
+p {
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding: 5% 15% 10% 15%;
+}
+
+
+button {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px grey;
+    padding: 2vh 4vh 2vh 4vh;
+    margin: 8% 0 4% 0;
+    width: auto;
+    font-size: 3vh;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+.center h4 {
+    font-size: 5vh;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 0% 0 5% 0;
+}
+
+.center {
+    position: relative;
+    text-align: center;
+}
+
+.open {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: left;
+}
+
+.open img {
+    width: 8rem;
+    height: fit-content;
+}
+
+.open p {
+    color: var(--text-color);
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 7% 2% 2% 2%;
+}
+
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2vh;
+}
+
+.details {
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+}
+
+h4 {
+    font-size: 3vh;
+}
+
+/* footer below should be the same on all pages*/ 
+
+.logo-nav-bar-footer {
+    height: 7rem;
+    padding: 1rem 0 1rem 1rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.footer {
+    background: var(--main-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+.sm {
+    color: var(--second-text-color);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+}
+
+.sm img {
+    width: 2rem;
+    margin: 1rem;
+}
+
+.sm p {
+    padding: 1rem 0 1rem 0;
+}
+
+.contact {
+    position: relative;
+}
+
+.contact h1 {
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+.contact p {
+    color: var(--text-color);
+    padding: 2rem;
+    font-weight: lighter;
+}
+
+.map {
+    width: 30rem;
+    padding-bottom: 0rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+.info img {
+    width: 20rem;
+}
+
+.info p {
+    padding: 10% 5% 5% 0%;
+}
+
+.info h2 {
+    padding: 0%;
+    text-align: left;
+}
